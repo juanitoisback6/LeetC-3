@@ -20,12 +20,14 @@ function lengthOfLongestSubstring (s) {
   //for(let ini = 0;ini<s.length; ini++ ){
   
   //first loop to iterate through the string
-  for(let i=0; i<s.length; i++){
+  for(let i=0; i<= s.length; i++){
     
     //first push of the array
     
+console.log(i);  
+console.log(mainArray); 
     dummyArray.push(s[i]);
-    
+    //second loop
         for(let o = i + 1; o < s.length ; o++){
           
            if( s[i] != s[o] ){
@@ -57,15 +59,12 @@ function lengthOfLongestSubstring (s) {
 
 console.log(lengthOfLongestSubstring (ss))
 
+const frutas = "abcabcbb";
+ 
+const ultimoIndice = frutas.length - 1; 
 
+console.log(ultimoIndice);  
 
-let principal = [];
-let secundario = [4, 5, 6];
-let terci = [4, 5, 6];
-
-principal.push(secundario);
-principal.push(terci);
-console.log(principal); 
 
 
  
